@@ -1,2 +1,3 @@
-use final.sql file to create database 
+use final.sql file to create database.
 
+i have used port 3307 but if you want to use default change port to 3306.
