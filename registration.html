@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .auth-container {
+      height: 700px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .auth-box {
+      background: #fff;
+      padding: 10px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+    input, select {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      background: #2e6476;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #3b7b8e;
+    }
+  </style>
+</head>
+<body>
+  <section class="background">
+    <nav class="navbar">
+            <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+            <div class="navbar-items h-class">
+                <ul class="nav v-class">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html#services">SERVICES</a></li>
+                    <li><a href="index.html#about">ABOUT US</a></li>
+                    <li><a href="index.html#contact">CONTACT</a></li>
+                    <li><a href="registration.html">DOCTOR</a></li>
+                </ul>
+            </div>
+            <div class="burger">&#9776;</div>
+        </nav>
+    <div class="auth-container">
+    <div class="auth-box">
+      <h2>Doctor Registration</h2>
+      <form action="register_doctor.php" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <select name="department" required>
+                <option value="" disabled selected>Select Department</option>
+                <option value="Virology">Virology</option>
+                <option value="Toxicology">Toxicology</option>
+                <option value="Immunology">Immunology</option>
+                <option value="Emergency Medicine">Emergency Medicine</option>
+            </select>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="number" name="age" placeholder="Age" min="20" max="80" required>
+            <input type="text" name="phone" placeholder="Phone" required>
+            <select name="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="password" name="password" placeholder="Password" required>
+
+            <!-- Vaccine fields -->
+            <input type="text" name="vaccine_name" placeholder="Preferred Vaccine Name" required>
+            <input type="text" name="disease" placeholder="Diseases Treated" required>
+            <input type="text" name="manufacturer" placeholder="Manufacturer" required>
+            <input type="text" name="hospital_add" placeholder="Hospital Address" required>
+            <input type="number" name="available" placeholder="Available Doses" required>
+
+            <button type="submit">Register Doctor</button>
+        </form>
+
+    </div>
+  </div>
+
+  </section>
+</body>
+</html>
