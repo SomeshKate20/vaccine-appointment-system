@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccine Management</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" />
+
+    <style>
+        #vaccine-results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        #vaccine-results-table th, #vaccine-results-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #vaccine-results-table th {
+            background-color: #009879;
+            color: white;
+        }
+
+        .book-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .book-btn:hover {
+            background-color: #218838;
+        }
+
+        .searchflex {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .search-input-area {
+            
+            align-items: center;
+            gap: 10px;
+        }
+
+        .searchbox {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .searchbtn {
+            background-color: #009879;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .searched {
+            margin-top: 25px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="background">
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+            <div class="navbar-items h-class">
+                <ul class="nav v-class">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html#services">SERVICES</a></li>
+                    <li><a href="index.html#about">ABOUT US</a></li>
+                    <li><a href="index.html#contact">CONTACT</a></li>
+                    <li><a href="registration.html">DOCTOR</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Search Section -->
+        <div class="searchflex">
+            <div class="search-input-area">
+                <input type="text" id="vaccine" placeholder="Search vaccine " class="searchbox">
+                <button type="button" class="searchbtn" id="searchbutton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+
+            <div class="searched" id="search-results-container">
+                <p>Enter a vaccine name and click search to view availability.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="para">Vaccine Management System</p>
+    </footer>
+
+
+    <script src="user.js"></script>
+    <script src="vaccinedetails.js"></script>
+</body>
+</html>
