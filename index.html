@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>health care</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icons">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" 
+    integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <section class="background">
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+            <div class="navbar-items h-class">
+                <ul class="nav v-class">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="registration.html">DOCTOR</a></li>
+                </ul>
+            </div>
+            <div class="burger">&#9776;</div>
+        </nav>
+        <div class="main">
+            <div class="text-box">
+                 <h1>Vaccination Management System</h1>
+                 <p>Find the vaccines to your virus, antidotes to your poison, all at one stop.</p>
+                 <a href="login.html" class="btn btn1">LOGIN</a> 
+                 </div>
+            <div class="box">
+                <h1>appointment</h1>
+                <form id="appointment-form">
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="number" name="age" id="age" placeholder="Age" required>
+                    <select name="gender" id="gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <input type="text" name="disease" id="disease" placeholder="Disease">
+                    <input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number" required>
+
+                    <input type="text" name="selected-vaccine" id="selected-vaccine" placeholder="Selected Vaccine" disabled>
+                    <input type="text" name="selected-manufacturer" id="selected-manufacturer" placeholder="Manufacturer" disabled>
+                    <input type="text" name="selected-doctor" id="selected-doctor" placeholder="Doctor" disabled>
+                    <input type="text" name="selected-hospital" id="selected-hospital" placeholder="Hospital Address" disabled>
+                    <textarea name="selected-availability" id="selected-availability" placeholder="Availability" disabled></textarea>
+
+                    <a href="user.html" id="search-vaccine-link" class="btn btn1">Search Vaccine</a>
+                    <button type="submit" class="btn btn2" >book appointment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services" data-aos="fade-up">
+        <h1 class="heading">Our services</h1>
+        <div class="row">
+            <div class="box1">
+                <i class="fas fa-tablets"></i>
+                <h2>Virus Details</h2>
+                <p>Find which virus you are infected with.</p>
+            </div>
+            <div class="box1">
+                <i class="fas fa-user-nurse"></i>
+                <h2>Vaccine Details</h2>
+                <p>Find the vaccine and its available in hospital details.</p>
+            </div>
+            <div class="box1">
+                <i class="fas fa-tablets"></i>
+                <h2>Poison</h2>
+                <p>Find all the lethal posion details.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box1">
+                <i class="fas fa-prescription-bottle"></i>
+                <h2>Antidotes</h2>
+                <p>Find the best antidote options and the places they are available.</p>
+            </div>
+            <div class="box1">
+                <i class="fas fa-x-ray"></i>
+                <h2>Hospital</h2>
+                <p>Find the nearest hospital where the vaccines and antidotes are available.</p>
+            </div>
+            <div class="box1">
+                <i class="fas fa-eye"></i>
+                <h2>Doctors</h2>
+                <p>Find the nearest doctors specialsiing in targeted organs.</p>
+            </div>
+        </div>
+    </section>
+    <section class="quality" data-aos="fade-up">
+        <h1 class="heading">Why choose us?</h1>
+        <div class="row">
+            <div class="box2">
+                <i class="fas fa-user-plus"></i>
+                <h2>24/7 available</h2>
+                <p>A single one stop website regarding all the information you need if you are infected with a virus or poison.</p>
+            </div>
+            <div class="box2">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h2>Medical cycle care</h2>
+                <p>Get all the details of hospital and doctors with their Specialization details.</p>
+            </div>
+            <div class="box2">
+                <i class="fas fa-award"></i>
+                <h2>Quality control</h2>
+                <p>Get certified and best quality medicine information.</p>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about" data-aos="fade-up">
+        <h1 class="heading">About us</h1>
+        <div class="row row1">
+            <div class="left">
+                <img src="img/pic2.jpg" alt="">
+            </div>
+            <div class="right">
+                <h1>Providing best care<br>innovating health</h1>
+                <p>The system also plays a crucial role in patient management. 
+                    It records patient data, tracks which vaccines they've received, and schedules future appointments, 
+                    sending automated reminders to reduce missed appointments. 
+                    This is particularly vital for multi-dose vaccines, ensuring patients complete the full series.
+                     By providing a comprehensive view of a patient's vaccination history, 
+                     it helps healthcare providers make informed decisions and prevent over-vaccination or under-vaccination.
+
+                </p>
+                <button class="btn btn3">explore more</button>
+            </div>
+        </div>
+    </section>
+    <section class="department" data-aos="fade-up">
+        <h1 class="heading">Our Features</h1>
+        <div class="row">
+             <div class="box3">
+                <h1>Viruses</h1>
+             </div>
+             <div class="box3">
+                <h1>Vaccines</h1>
+             </div>
+             <div class="box3">
+                <h1>Poisons</h1>
+             </div>
+             <div class="box3">
+                <h1>Antidotes</h1>
+             </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="footer-sec">
+            <div class="sec">
+                <div class="f_box">
+                    <h2>contact</h2>
+                    <p>email</p>
+                    <p>youtube</p>
+                    <p>facebook</p>
+                    <p>twitter</p>
+                </div>
+                <div class="f_box">
+                    <h2>Features</h2>
+                    <p>Viruses</p>
+                    <p>Vaccines</p>
+                    <p>Poison</p>
+                    <p>Antidotes</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div class="f_box">
+                    <h2>address</h2>
+                    <p>Mumbai<br>India</p>
+                    <p>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-snapchat"></i>
+                        <i class="fab fa-whatsapp"></i>
+                    </p>
+                </div>
+                <div class="f_box">
+                    <h2>other facilities</h2>
+                    <p>24/7 services</p>
+                    <p>quality control</p>
+                    <p>full cycle medical care</p>
+                </div>
+            </div>
+        </div>
+        <p class="para">Vaccine Management System</p>
+    </footer>
+    
+
+   
+    <script src="saveData.js"></script>
+    <script src="loadData.js"></script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // 👇 CRITICAL: Logic to SAVE user data when "Search Vaccine" is clicked
+        const searchLink = document.getElementById('search-vaccine-link');
+        
+        if (searchLink) {
+            searchLink.addEventListener('click', (event) => {
+                // Prevent the link from navigating immediately
+                event.preventDefault();
+
+                // 1. Collect user form data
+                const formData = {
+                    name: document.getElementById('name').value,
+                    age: document.getElementById('age').value,
+                    gender: document.getElementById('gender').value,
+                    disease: document.getElementById('disease').value,
+                    phone: document.getElementById('phone-number').value
+                };
+
+                // 2. Save user data to sessionStorage
+                sessionStorage.setItem('appointmentFormData', JSON.stringify(formData));
+                
+                // 3. Navigate to the vaccine search page
+                window.location.href = event.target.href;
+            });
+        }
+    </script>
+
+</body>
+</html>
