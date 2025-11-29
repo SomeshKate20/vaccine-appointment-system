@@ -1,3 +1,6 @@
+download Xampp and change the port of mysql to 3307 if you want deafult then change port in code to 3306.
+I have used port 3307 but if you want to use default change port to 3306.
+
+In mysql admin create database using queries in final.sql file.
 use final.sql file to create database.
 
-i have used port 3307 but if you want to use default change port to 3306.
