@@ -88,6 +88,6 @@ $conn->close();
 </head>
 <body>
     <div id="root"></div>
-    <script type="text/babel" src="app.js"></script>
+    <script type="text/label" src="app.js"></script>
 </body>
 </html>
